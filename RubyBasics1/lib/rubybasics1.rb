@@ -4,7 +4,7 @@ def sum arr
   return arr.sum
 end
 
-# Part II
+# Part II done
 def max_2_sum arr
   return arr.max(2).sum
 end
