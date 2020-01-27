@@ -1,7 +1,15 @@
 # RubyHashes
 # Part I
 def array_2_hash emails, contacts
-    # YOUR CODE HERE
+    hash1 = {}
+  
+    
+    counter = 0
+    contacts.each do |key, value|
+        hash1[key] = emails[counter] || ""
+        counter+=1
+    end
+    return hash1
 end
 
 # Part II
