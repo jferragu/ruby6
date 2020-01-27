@@ -14,7 +14,15 @@ end
 
 # Part II
 def array2d_2_hash contact_info, contacts
-    # YOUR CODE HERE
+    hash2 = Hash.new()
+    counter2 = 0
+    contacts.each do |key, value|
+        hash2[key] = Hash.new()
+        hash2[key][:'email'] = contact_info[counter2][0] || ""
+        hash2[key][:'phone'] = contact_info[counter2][1] || ""
+        counter2+=1
+    end
+    return hash2
 end
 
 # Part III
