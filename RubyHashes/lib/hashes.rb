@@ -27,5 +27,11 @@ end
 
 # Part III
 def hash_2_array contacts
-    # YOUR CODE HERE
+    array3 = [[],[],[]]
+    contacts.each do |key, value|
+        array3[0].push(value[:email])
+        array3[1].push(value[:phone])
+        array3[2].push(key.to_s)
+    end
+    return array3
 end
